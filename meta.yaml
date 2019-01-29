@@ -1,0 +1,39 @@
+package:
+  name: s2-toa-to-lai
+  version: '1.0.1'
+     
+source:
+  git_url: https://github.com/MarcYin/S2_TOA_TO_LAI.git
+  git_tag: master
+
+build:
+  script: python setup.py install  --single-version-externally-managed --record=record.txt
+  noarch: generic
+  channels:
+    - anaconda
+    - conda-forge
+     
+requirements:
+  host:
+    - python
+    - siac
+    - gdal >=2.1,<2.4
+  run:
+    - python
+    - siac
+    - gdal >=2.1,<2.4
+test:
+  commands:
+    - echo 'Hello world'
+about:
+  home: https://github.com/MarcYin/S2_TOA_TO_LAI.git
+  license: GNU Affero General Public License v3.0
+  license_family: AGPL
+  license_file: 'LICENSE.md'
+  summary:  From Sentinel 2 TOA to LAI
+  description: "From Sentinel 2 TOA to LAI"
+  doc_url: ''
+  dev_url: ''
+     
+extra:
+  recipe-maintainers: ''
