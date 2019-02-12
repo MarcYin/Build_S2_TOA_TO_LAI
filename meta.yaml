@@ -16,6 +16,7 @@ build:
 requirements:
   host:
     - siac
+    - python
     - gdal >=2.1,<2.4
   run:
     - siac
