@@ -8,7 +8,7 @@ source:
 
 build:
   script: python setup.py install  --single-version-externally-managed --record=record.txt
-  noarch: generic
+  noarch: python
   channels:
     - anaconda
     - conda-forge
