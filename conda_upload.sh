@@ -2,7 +2,7 @@ conda install conda-build
 conda install anaconda-client 
 USER=f0xy  
 conda config --set anaconda_upload no  
-conda build . -c conda-forge -c f0xy
-export CONDA_PACKAGE=`conda build --output . -c conda-forge -c f0xy | grep bz2`
+conda build . -c conda-forge -c f0xy -c jgomezdans
+export CONDA_PACKAGE=`conda build --output . -c conda-forge -c f0xy -c jgomezdans | grep bz2`
 echo $CONDA_PACKAGE
 anaconda -t $CONDA_UPLOAD_TOKEN upload -u $USER $CONDA_PACKAGE --force

@@ -15,12 +15,12 @@ build:
      
 requirements:
   host:
-    - siac
     - python
+    - siac
     - gdal >=2.1,<2.4
   run:
-    - siac
     - python
+    - siac
     - gdal >=2.1,<2.4
 test:
   commands:
