@@ -1,6 +1,6 @@
 package:
   name: s2-toa-to-lai
-  version: '1.0.1'
+  version: '1.0.4'
      
 source:
   git_url: https://github.com/MarcYin/S2_TOA_TO_LAI.git
